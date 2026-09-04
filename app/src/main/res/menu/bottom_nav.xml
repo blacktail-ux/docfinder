@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_search" android:title="Cari" android:icon="@android:drawable/ic_menu_search"/>
+    <item android:id="@+id/nav_docs" android:title="Dokumen" android:icon="@android:drawable/ic_menu_upload"/>
+</menu>

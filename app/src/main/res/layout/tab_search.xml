@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="Cari di semua dokumen" android:textStyle="bold" android:textSize="24sp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="Temukan kata, nama file, atau frasa dengan cepat."
+        android:textSize="14sp" android:alpha=".7" android:layout_marginTop="4dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@android:drawable/ic_menu_search"
+        android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/query" android:hint="Ketik pencarian..." android:singleLine="true"
+            android:imeOptions="actionSearch" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/searchBtn" android:text="Cari sekarang"
+        android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/resultCount" android:text="Siap mencari"
+        android:textStyle="bold" android:layout_marginTop="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/results"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"
+        android:clipToPadding="false" android:paddingTop="8dp"/>
+</LinearLayout>
